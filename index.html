@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<!-- 
+        Awesome Template
+        http://www.templatemo.com/preview/templatemo_450_awesome
+        -->
+	<title>KII Portofolio</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/templatemo-style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.singlePageNav.min.js"></script>
+	<script src="assets/js/typed.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</head>
+
+<body id="top">
+	<!-- start navigation -->
+	<nav class="navbar navbar-default templatemo-nav" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<a class="navbar-brand">KII</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#top">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#skill">SKILL</a></li>
+					<li><a href="#team">PROJECT</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- end navigation -->
+
+	<!-- start home -->
+	<section id="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8">
+					<h1 class="wow fadeIn animated" data-wow-offset="50" data-wow-delay="0.4s"
+						style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+						Welcome to <br> My Portofolio <span>Website</span></h1>
+					<div class="element">
+						<div class="sub-element">My name is Yehezkiel Donato Raharjo</div>
+						<div class="sub-element">I'm 17 years old</div>
+						<div class="sub-element">Im SMK N 2 Karanganyar's Student</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- start about -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">ABOUT
+						<span>ME</span></h2>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+					<div class="media">
+						<div class="media-heading-wrapper">
+							<div class="media-object pull-left">
+								<i class="fa fa-mobile"></i>
+							</div>
+							<h3 class="media-heading">My Biodata</h3>
+						</div>
+						<div class="media-body">
+							<p>My name is Yehezkiel Donato Raharjo, i was born in Sragen, 13 July 2007.
+								Now i live in Jaten, Karanganyar Jawa Tengah</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+					<div class="media">
+						<div class="media-heading-wrapper">
+							<div class="media-object pull-left">
+								<i class="fa fa-comment-o"></i>
+							</div>
+							<h3 class="media-heading">School</h3>
+						</div>
+						<div class="media-body">
+							<p> Now im study in SMK Negeri 2 Karanganyar, im grade 3 in RPLC class </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+					<div class="media">
+						<div class="media-heading-wrapper">
+							<div class="media-object pull-left">
+								<i class="fa fa-html5"></i>
+							</div>
+							<h3 class="media-heading">SKILL</h3>
+						</div>
+						<div class="media-body">
+							<p> Since i study in SMK N 2 Kra, i learn many things. I can use the PHP and
+								HTML CSS programming languages </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+
+	<!-- start skill -->
+	<section id="skill">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="wow bounceIn animated" data-wow-offset="50" data-wow-delay="0.3s"
+						style="visibility: visible; animation-delay: 0.3s; animation-name: bounceIn;"><span>MY</span>
+						SKILL</h2>
+				</div>
+				<div class="col-md-offset-2 col-md-8">
+					<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+					<script>
+						const xValues = ["HTML", "CSS", "PHP", "JS", "JAVA", ""];
+						const yValues = [60, 40, 50, 20, 10, 0];
+						const barColors = ["white", "white", "white", "white", "white", ""];
+
+						new Chart("myChart", {
+							type: "bar",
+							data: {
+								labels: xValues,
+								datasets: [{
+									backgroundColor: barColors,
+									data: yValues
+								}]
+							},
+							options: {
+								legend: {
+									display: false
+								},
+								title: {
+									display: true,
+									text: "My skill programming in percent"
+								}
+							}
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end skill -->
+
+	<!-- start Project -->
+	<section id="team">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="wow bounceIn animated" data-wow-offset="50" data-wow-delay="0.3s"
+						style="visibility: visible; animation-delay: 0.3s; animation-name: bounceIn;">MY
+						<span>PROJECT</span></h2>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn animated" data-wow-offset="50" data-wow-delay="1.3s"
+					style="visibility: visible; animation-delay: 1.3s; animation-name: fadeIn;">
+					<div class="team-wrapper">
+						<img src="assets/images/biodatafull.png" class="img-responsive" alt="team img 1">
+						<div class="team-des">
+							<h4>LOGIN SYSTEM USING JAVA</h4>
+							<span>PBGTM</span>
+							<p>Create a login form system and its appearance using Java in NetBeans</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn animated" data-wow-offset="50" data-wow-delay="1.6s"
+					style="visibility: visible; animation-delay: 1.6s; animation-name: fadeIn;">
+					<div class="team-wrapper">
+						<img src="assets/images/audioo.png" class="img-responsive" alt="team img 2">
+						<div class="team-des">
+							<h4>AUDIO PLAYER USING JAVA</h4>
+							<span>PBGTM</span>
+							<p>Create an audio player and change its appearance using Java in NetBeans</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn animated" data-wow-offset="50" data-wow-delay="1.6s"
+					style="visibility: visible; animation-delay: 1.6s; animation-name: fadeIn;">
+					<div class="team-wrapper">
+						<img src="assets/images/olsop.png" class="img-responsive" alt="team img 2">
+						<div class="team-des">
+							<h4>WEB-BASED ONLINE STORE APPLICATION</h4>
+							<span>CI3</span>
+							<p>Creating an online store application using PHP CodeIgniter 3</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end Project -->
+
+	<!-- start contact -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">MY <span>CONTACT</span>
+					</h2>
+				</div>
+				<div class="col-md-12 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+					<address>	
+						<p><i class="fa fa-phone"></i> 0813-9061-6346</p>
+						<p><i class="fa fa-envelope-o"></i> yehezkielraharjo5@gmail.com</p>
+						<p><a href="https://www.instagram.com/yehezkiel_d.r/" class="fa fa-instagram"></a> @yehezkiel_d.r</p>
+					</address> 	
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contact -->
+
+	<!-- start copyright -->
+	<footer id="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+						Copyright &copy; Yhzkl</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end copyright -->
+
+</body>
+
+</html>
